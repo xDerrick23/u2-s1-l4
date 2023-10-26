@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Indie Flower", cursive;
+  background-color: #666666;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  padding: 3rem;
+  gap: 3rem;
+}
+.postit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  box-shadow: inset 0px -30px 20px -20px #00000050, 10px 10px 8px 0px #00000080;
+}
+
+.postit h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.postit p {
+  font-size: 26px;
+}
+
+.yellow {
+  background-color: #fdfdcb;
+  rotate: -7deg;
+}
+
+.green {
+  background-color: #ccfece;
+  rotate: 5deg;
+}
+
+.purple {
+  background-color: #cbcafa;
+  rotate: -6deg;
+}
+
+.yellow:hover {
+  rotate: unset;
+  scale: 1.3;
+  z-index: 1;
+}
+
+.green:hover {
+  rotate: unset;
+  scale: 1.3;
+  z-index: 1;
+}
+
+.purple:hover {
+  rotate: unset;
+  scale: 1.3;
+  z-index: 1;
+}
+
+.yellow:hover,
+.green:hover,
+.purple:hover {
+  transition: 0.3s ease-in-out;
+}
